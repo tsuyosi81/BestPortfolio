@@ -241,13 +241,14 @@ button.toggler-menu {
   opacity: 65%;
 }
 
-.box {
+.home-box {
   padding-top: 90px;
   padding-bottom: 50px;
+  padding-left: 15%;
   font-family: "Poppins", sans-serif;
 }
 
-.box h6 {
+.home-box h6 {
   color: #404040;
   font-size: 20px;
   font-weight: 400;
@@ -255,7 +256,7 @@ button.toggler-menu {
   font-family: "Poppins", sans-serif;
 }
 
-.box h1 {
+.home-box h1 {
   font-size: 80px;
   font-weight: 700;
   line-height: 1;
@@ -264,7 +265,7 @@ button.toggler-menu {
   font-family: "Poppins", sans-serif;
 }
 
-.box .lead {
+.home-box .lead {
   color: #404040;
   font-weight: 400;
   font-size: 18px;
@@ -273,7 +274,7 @@ button.toggler-menu {
   font-family: "Poppins", sans-serif;
 }
 
-.box .desc {
+.home-box .desc {
   max-width: 450px;
   color: #404040;
   font-family: "Poppins", sans-serif;
@@ -348,6 +349,8 @@ button.toggler-menu {
     width: 80vw;
   }
 }
+
+/* NOTE About Me */
 
 #about {
   font-family: "Poppins", sans-serif;
@@ -467,6 +470,8 @@ button.toggler-menu {
   background-color: ;
 }
 
+/* NOTE Works */
+
 .box1 {
   background: #b7b7a4;
   padding: 40px;
@@ -474,6 +479,8 @@ button.toggler-menu {
   overflow: hidden;
   position: relative;
   z-index: 1;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
 }
 
 .box1:before {
@@ -534,6 +541,10 @@ button.toggler-menu {
   height: 120%;
   border-radius: 0;
   transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.55s;
+}
+
+.box1:hover {
+  transform: scale(1.2);
 }
 
 #works {
@@ -903,6 +914,8 @@ button.toggler-menu {
   transform: scale(2) !important;
 } */
 
+/* NOTE Experience */
+
 .resume-box {
   font-family: "Poppins", sans-serif;
 }
@@ -932,30 +945,30 @@ button.toggler-menu {
   margin-top: 25px;
 }
 
-.mh-professional-skills {
+/* NOTE Skills */
+
+/* .mh-professional-skills {
   padding-left: 20%;
-  color: white;
-}
+} */
 
 .mh-professional-skills h3 {
   font-size: 30px;
   line-height: 40px;
   text-align: center;
-  font-size: 400;
   margin-bottom: 60px;
-  font-family: "Poppins", sans-serif;
-  color: #0f1025;
+  /* font-family: "Poppins", sans-serif;
+  color: #404040; */
 }
 
 .mh-professional-progress li {
   display: inline-block;
   margin: 0 auto;
-  float: none;
+  /* float: none; */
   width: 48%;
   margin-bottom: 30px;
   text-align: center;
 }
-
+/* 
 .mh-progress {
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
@@ -973,16 +986,117 @@ button.toggler-menu {
 .mh-progress path:nth-child(1) {
   stroke: rgba(0, 0, 0, 0.7);
   stroke-width: 5px;
-}
+} */
 
-.mh-progress path:nth-child(2) {
-  stroke: #f5d020 !important;
-  stroke-width: 5px;
-}
-
-.title-skills {
+/* .title-skills {
   margin-bottom: 20px;
+} */
+
+/* .progress-container {
+  position: relative;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
 }
+.progress-container .card {
+  position: relative;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.progress-container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+/* .progress-container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  z-index: 1;
+} */
+
+.box {
+  background: #fff;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+.box:hover {
+  transform: scale(1.2);
+}
+.box .percent {
+  /* width: 150px;
+  height: 150px; */
+  position: relative;
+}
+.box .percent svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #adb5bd;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 88) / 100);
+  stroke: #adb5bd;
+}
+
+.box .percent .num {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #404040;
+}
+.box .percent .num h2 {
+  font-size: 48px;
+}
+.box .percent .num h2 span {
+  font-size: 24px;
+}
+.box .text {
+  margin-bottom: 0;
+  color: #999;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* NOTE Contact */
 
 .contact-info {
   font-family: "Poppins", sans-serif;
@@ -1059,23 +1173,23 @@ button.toggler-menu {
   padding: 15px 35px;
 }
 
+/* NOTE Google Map */
+
 .google-map {
   margin-top: 50px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
-.google-map embed {
+/* .google-map .embed {
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
+} */
+
+.google-map .embed:before {
+  padding-top: 40%;
 }
 
-.google-map embed:before {
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}
-
-.google-map embed:before {
-  padding-top: 30%;
-}
+/* NOTE Footer */
 
 .footer {
   padding: 12px 0;
