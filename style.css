@@ -1,5 +1,10 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
 }
 
 .title h3 {
@@ -356,7 +361,7 @@ button.toggler-menu {
   font-family: "Poppins", sans-serif;
 }
 
-.img {
+.about-me {
   text-align: center;
 }
 
@@ -506,7 +511,6 @@ button.toggler-menu {
   border-radius: 50%;
   z-index: -2;
   background-color: #ffe8d6;
-  /* background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%); */
   background-image: ;
   transition: cubic-bezier(0.39, 0.58, 0.57, 1) all 0.15s;
 }
@@ -547,7 +551,112 @@ button.toggler-menu {
   transform: scale(1.2);
 }
 
-#works {
+/* NOTE Projects */
+
+.container #projects .title {
+  justify-content: center;
+  text-align: center;
+}
+
+#project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.project-heading {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-heading h3 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.project-heading span {
+  color: #f33c3c;
+}
+
+.project-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* border: 1px solid #; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.project-filter li {
+  margin: 10px;
+  padding: 5px 20px;
+  color: #404040;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+}
+
+.project-filter-active {
+  background-color: #f0f0f0;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-box {
+  width: 330px;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-box img:hover {
+  transform: scale(1.06);
+  transition: 0.35s;
+}
+
+@media (max-wdith: 740px) {
+  .project-filter {
+    background-color: #f9f9f9;
+    border: 1px solid #0f1025;
+  }
+  .project-filter-active {
+    background-color: #ffffff;
+    border: 1px solid #0f1025;
+  }
+  .project-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-heading h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* #works {
   font-family: "Poppins", sans-serif;
 }
 
@@ -854,7 +963,7 @@ button.toggler-menu {
   color: white;
   vertical-align: middle;
   transform: rotate(45deg);
-}
+} */
 
 /* .cube {
   overflow-x: hidden !important;
@@ -947,27 +1056,21 @@ button.toggler-menu {
 
 /* NOTE Skills */
 
-/* .mh-professional-skills {
-  padding-left: 20%;
-} */
-
 .mh-professional-skills h3 {
   font-size: 30px;
   line-height: 40px;
   text-align: center;
   margin-bottom: 60px;
-  /* font-family: "Poppins", sans-serif;
-  color: #404040; */
 }
 
 .mh-professional-progress li {
   display: inline-block;
   margin: 0 auto;
-  /* float: none; */
   width: 48%;
   margin-bottom: 30px;
   text-align: center;
 }
+
 /* 
 .mh-progress {
   font-family: "Poppins", sans-serif;
@@ -1026,7 +1129,7 @@ button.toggler-menu {
   z-index: 1;
 } */
 
-.box {
+/* .box {
   background: #fff;
   width: 200px;
   height: 250px;
@@ -1042,8 +1145,6 @@ button.toggler-menu {
   transform: scale(1.2);
 }
 .box .percent {
-  /* width: 150px;
-  height: 150px; */
   position: relative;
 }
 .box .percent svg {
@@ -1066,8 +1167,24 @@ button.toggler-menu {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-.box .percent svg circle:nth-child(2) {
+
+.box .percent .html circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 88) / 100);
+  stroke: #adb5bd;
+}
+
+.box .percent .javascript circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 75) / 100);
+  stroke: #adb5bd;
+}
+
+.box .percent .react circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 65) / 100);
+  stroke: #adb5bd;
+}
+
+.box .percent .node circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
   stroke: #adb5bd;
 }
 
@@ -1094,6 +1211,126 @@ button.toggler-menu {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
+} */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* border-radius: 10px; */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  /* border-radius: 10px; */
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #b7b7a4;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 80%;
+}
+.bar .progress-line.javascript span {
+  width: 70%;
+}
+.bar .progress-line.react span {
+  width: 50%;
+}
+.bar .progress-line.sql span {
+  width: 65%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "80%";
+}
+.progress-line.javascript span::after {
+  content: "70%";
+}
+.progress-line.react span::after {
+  content: "50%";
+}
+.progress-line.sql span::after {
+  content: "65%";
+}
+
+@media (max-width: 550px) {
 }
 
 /* NOTE Contact */
