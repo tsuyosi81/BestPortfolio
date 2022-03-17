@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="style.css">
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+    <script src="./main.js"></script>
+
   </head>
 
   <body>
@@ -1296,38 +1302,40 @@
             <div class="col-lg-7">
                 <div class="contact-form">
                     <h4>Say something</h4>
-                    <form action="https://formsubmit.co/onstyle0801@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/tharayama@icstars.org" method="POST">
+                    <!-- <form method="POST"> -->
                         <div class="row">
+
+                            <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="Name" id="name" placeholder="Name *" class="form-control">
+                                    <input type="text" name="Name" id="name" placeholder="Name *" class="form-control name" required>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="email" name="Email" id="email" placeholder="Email *"
-                                        class="form-control">
+                                        class="form-control email" required>
                                 </div>
                             </div>
 
                             <div class="col-12">
                                 <div class="form-group">
                                     <input type="text" name="Subject" id="subject" placeholder="Subject *"
-                                        class="form-control">
+                                        class="form-control subject" required>
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea name="Message" id="messange" placeholder="Your Messages *" rows="5"
-                                        class="form-control"></textarea>
+                                    <textarea name="Message" id="messange" placeholder="Your Messages *" rows="5" class="form-control" required></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="send">
-                                    <button class="btn btn-primary" type="button" value="send">
+                                    <button class="btn btn-primary submit" type="submit" value="send">
                                         Send message
                                     </button>
                                 </div>
@@ -1411,8 +1419,9 @@
     <script src="jquery.prettyPhoto.js"></script>
     
 
-    <script src="modernizr.custom.63321.js"></script>
-    <script src="jquery.stapel.js"></script> -->
+    <script src="modernizr.custom.63321.js"></script>-->
+
+    <script src="jquery.stapel.js"></script> 
 
 
 
