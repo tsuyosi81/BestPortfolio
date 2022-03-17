@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://megaone.acrothemes.com/vendor/css/cubeportfolio.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+    <script src="jquery.stapel.js"></script>
     <script src="./main.js"></script>
 </head>
 
@@ -519,93 +521,6 @@
                 </div>
             </footer>
         </div>
-        <!-- Toggler Menu -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
-        <!--Project  -->
-        <script src="jquery.stapel.js"></script>
-        <!-- Toggler Menu -->
-        <script>
-            (function ($) {
-                "use strict";
-                var NAY = {};
-                NAY.MenuTogglerClose = function () {
-                    $(".toggler-menu").on('click', function () {
-                        $('.header-left').stop().toggleClass('menu-open');
-                    });
-
-                    $('.header-left a').on('click', function () {
-                        var toggle = $('.toggler-menu');
-                    });
-                }
-                $(document).on("ready", function () {
-                    NAY.MenuTogglerClose()
-                });
-            })(jQuery);
-
-        </script>
-        <!-- <script>
-        $(function () {
-            var $grid = $('#tp-grid'),
-                $name = $('#name'),
-                $close = $('#close'),
-                $loader = $('').insertBefore($grid),
-                stapel = $grid.stapel({
-                    randomAngle: true,
-                    delay: 50,
-                    gutter: 70,
-                    pileAngles: 5,
-                    onLoad: function () {
-                        $loader.remove();
-                    },
-                    onBeforeOpen: function (pileName) {
-                        $name.html(pileName);
-                    },
-                    onAfterOpen: function (pileName) {
-                        $close.show();
-                    }
-                });
-            $close.on('click', function () {
-                $close.hide();
-                $name.empty();
-                stapel.closePile();
-            }); -->
-        <!-- <script>
-        jQuery(function ($) {
-            "use strict";
-            $('#flat').cubeportfolio({
-                filters: '#flat',
-                layoutMode: 'mosaic',
-                sortByDimension: true,
-                mediaQueries: [{
-                    width: 1300,
-                    cols: 6,
-                }, {
-                    width: 1100,
-                    cols: 6,
-                }, {
-                    width: 920,
-                    cols: 6,
-                }, {
-                    width: 400,
-                    cols: 1,
-                    options: {
-                        gapHorizontal: 15,
-                        gapVertical: 15,
-                    }
-                }],
-                defaultFilter: '*',
-                animationType: 'fadeOutTop',
-                gapHorizontal: 0,
-                gapVertical: 0,
-                gridAdjustment: 'responsive',
-                caption: 'zoom',
-                lightboxDelegate: '.cbp-lightbox',
-                lightboxGallery: true,
-                lightboxTitleSrc: 'data-title',
-            });
-        }); -->
-
 </body>
 
 </html>
