@@ -18,17 +18,6 @@ ul {
   vertical-align: top;
 }
 
-.titleh3:after {
-  content: "";
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #ffc107;
-  position: absolute;
-  top: -8px;
-  left: -15px;
-  z-index: -1;
-}
 .theme-light .title h3:after {
   background: rgba(255, 147, 1, 0.5);
 }
@@ -48,6 +37,8 @@ body {
 * {
   outline: none !important;
 }
+
+/* NOTE Navbar */
 
 a {
   color: #ffc107;
@@ -213,6 +204,8 @@ button.toggler-menu {
   line-height: 20px;
   text-align: center;
 }
+
+/* NOTE Home */
 
 .banner .full-screen {
   min-height: 100vh;
@@ -574,7 +567,6 @@ button.toggler-menu {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  /* border: 1px solid #; */
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
   margin: 20px;
