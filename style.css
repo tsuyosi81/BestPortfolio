@@ -1,6 +1,7 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 ul {
@@ -102,10 +103,10 @@ button.toggler-menu {
   border: none;
 }
 
-.mob-header {
+.d-flex {
   padding: 15px;
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 11;
@@ -295,6 +296,13 @@ button.toggler-menu {
 }
 
 @media (max-width: 767px) {
+  html {
+    position: relative;
+  }
+
+  body {
+    position: absolute;
+  }
   .banner .top-fixed {
     display: none !important;
   }
