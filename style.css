@@ -343,6 +343,8 @@ button.toggler-menu {
 
 #about {
   font-family: "Poppins", sans-serif;
+  margin-left: 7.7%;
+  margin-right: 3%;
 }
 
 .about-me {
@@ -434,10 +436,34 @@ button.toggler-menu {
   background-repeat: repeat-x;
   background-size: auto 6px;
   background-position: center;
-  background-color: ;
+  margin-left: 9.4%;
+  margin-right: 3%;
+}
+
+@media (max-width: 740px) {
+  .about-me img {
+    margin-left: 3%;
+  }
+
+  .info-list {
+    width: 100%;
+  }
+
+  .col-lg-7 {
+    margin-top: 20%;
+  }
+
+  .container .info {
+    margin-left: 15%;
+  }
 }
 
 /* NOTE Works */
+
+#work {
+  margin-left: 7.7%;
+  margin-right: 3%;
+}
 
 .box1 {
   background: #b7b7a4;
@@ -512,24 +538,6 @@ button.toggler-menu {
   transform: scale(1.2);
 }
 
-@media (max-width: 740px) {
-  .about-me img {
-    margin-left: 3%;
-  }
-
-  .info-list {
-    width: 100%;
-  }
-
-  .col-lg-7 {
-    margin-top: 20%;
-  }
-
-  .container .info {
-    margin-left: 15%;
-  }
-}
-
 /* NOTE Projects */
 
 .container #projects .title {
@@ -543,6 +551,8 @@ button.toggler-menu {
   align-items: center;
   flex-direction: column;
   margin: 40px 0;
+  margin-left: 7.7%;
+  margin-right: 3%;
 }
 
 .project-heading {
@@ -665,6 +675,10 @@ button.toggler-menu {
 }
 
 /* NOTE Skills */
+#skills {
+  margin-left: 7%;
+  margin-right: 3%;
+}
 
 .mh-professional-skills h3 {
   font-size: 30px;
@@ -693,6 +707,7 @@ button.toggler-menu {
   margin-top: 0px;
 }
 .skill-bars .bar .info {
+  margin-left: -20%;
   margin-bottom: 5px;
 }
 .skill-bars .bar .info span {
@@ -811,6 +826,11 @@ button.toggler-menu {
 
 /* NOTE Contact */
 
+#contact {
+  margin-left: 7.7%;
+  margin-right: 3%;
+}
+
 .contact-info {
   font-family: "Poppins", sans-serif;
 }
@@ -904,6 +924,8 @@ button.toggler-menu {
 .footer {
   padding: 12px 0px;
   font-family: "Poppins", sans-serif;
+  margin-left: 7.7%;
+  margin-right: 3%;
 }
 
 .footer .nav a {
