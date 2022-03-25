@@ -443,6 +443,10 @@ button.toggler-menu {
 }
 
 @media (max-width: 740px) {
+  .separated {
+    margin: 0 7% 0 7%;
+  }
+
   .about-me img {
     margin-left: 3%;
   }
@@ -629,10 +633,8 @@ button.toggler-menu {
 }
 
 .text {
-  /* background-color: #b7b7a4; */
   color: #404040;
   font-size: 16px;
-  padding: 16px 32px;
 }
 
 @media (max-wdith: 740px) {
@@ -662,16 +664,16 @@ button.toggler-menu {
 }
 
 .education-box {
-  margin: 0;
   padding: 35px;
   background: #b7b7a4;
   list-style: none;
   color: #404040;
   width: 450px;
   height: 550px;
-  margin-top: 50px;
   margin-left: -20px;
   overflow: scroll;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .education-box h6 {
@@ -706,8 +708,10 @@ button.toggler-menu {
 }
 
 .skill-bars {
+  margin-top: 50px;
   padding: 25px 30px;
-  width: 100%;
+  width: 450px;
+  height: 550px;
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -822,9 +826,12 @@ button.toggler-menu {
 }
 
 @media (max-width: 767px) {
-  .row {
-    margin-left: 5%;
-    margin-right: 5%;
+  .education-box {
+    width: 100%;
+  }
+
+  .skill-bars {
+    width: 100%;
   }
 
   .mh-professional-skills h3 {
