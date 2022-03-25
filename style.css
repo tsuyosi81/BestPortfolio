@@ -552,26 +552,8 @@ button.toggler-menu {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 40px 0;
   margin-left: 7.7%;
   margin-right: 3%;
-}
-
-.project-heading {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-heading h3 {
-  font-size: 2.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.project-heading span {
-  color: #f33c3c;
 }
 
 .project-filter {
@@ -612,6 +594,7 @@ button.toggler-menu {
   width: 330px;
   padding: 15px;
   border: 1px solid #eeeeee;
+  position: relative;
 }
 
 .project-box img {
@@ -621,9 +604,35 @@ button.toggler-menu {
   border-radius: 5px;
 }
 
-.project-box img:hover {
+.project-box .image:hover {
   transform: scale(1.06);
   transition: 0.35s;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-box:hover .image {
+  opacity: 0.3;
+}
+
+.project-box:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /* background-color: #b7b7a4; */
+  color: #404040;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 @media (max-wdith: 740px) {
