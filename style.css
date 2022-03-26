@@ -548,6 +548,8 @@ button.toggler-menu {
 @media (max-width: 740px) {
   .box1 {
     width: 85%;
+  }
+  .box2 {
     margin-top: 8%;
   }
 }
