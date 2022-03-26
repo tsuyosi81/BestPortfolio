@@ -469,6 +469,7 @@ button.toggler-menu {
 #work {
   margin-left: 9%;
   margin-right: 3%;
+  align-items: center;
 }
 
 .box1 {
@@ -542,6 +543,13 @@ button.toggler-menu {
 
 .box1:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 740px) {
+  .box1 {
+    width: 85%;
+    margin-top: 8%;
+  }
 }
 
 /* NOTE Projects */
