@@ -3,11 +3,11 @@ html {
   scroll-behavior: smooth;
   position: relative;
 }
-/*
+
 ul {
   list-style: none;
 }
-
+/*
 .title h3 {
   margin: 0;
   color: #404040;
@@ -23,8 +23,8 @@ body {
   font-family: sans-serif;
   font-size: 15px;
   font-weight: 400;
-} */
-
+}
+*/
 * {
   outline: none !important;
 }
@@ -557,15 +557,11 @@ button.toggler-menu {
 
 .skill-bars .bar {
   margin: 20px 0;
+  padding: 1%;
 }
 
 .skill-bars .bar:first-child {
   margin-top: 0px;
-}
-
-.skill-bars .bar .info {
-  /* margin-left: -20%;
-  margin-bottom: 5px; */
 }
 
 .skill-bars .bar .info span {
@@ -693,18 +689,15 @@ button.toggler-menu {
 
 /* NOTE Projects */
 
-/* .container #projects .title {
+.container #projects .title {
   justify-content: center;
   text-align: center;
 }
-
 #project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 7.7%;
-  margin-right: 3%;
 }
 
 .project-filter {
@@ -715,6 +708,7 @@ button.toggler-menu {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
   margin: 20px;
+  padding-left: 0;
 }
 
 .project-filter li {
@@ -726,6 +720,7 @@ button.toggler-menu {
   font-weight: 400;
   cursor: pointer;
   user-select: none;
+  list-style: none;
 }
 
 .project-filter-active {
@@ -802,14 +797,12 @@ button.toggler-menu {
   .project-heading h3 {
     font-size: 1.8rem;
   }
-} */
+}
+*//* 
 
 /* NOTE Contact */
 
-/* #contact {
-  margin-left: 7.7%;
-  margin-right: 3%;
-}
+
 
 .contact-info {
   font-family: "Poppins", sans-serif;
@@ -886,26 +879,39 @@ button.toggler-menu {
   background: transparent;
   color: #0f1025;
   padding: 15px 35px;
-} */
+}
+
+@media (max-width: 764px) {
+  .contact-form {
+    margin-top: 10%;
+  }
+
+  .contact-me {
+    text-align: center;
+  }
+
+  .contact-info p {
+    margin-top: 10%;
+  }
+}
 
 /* NOTE Google Map */
 
-/* .google-map {
+.google-map {
   margin-top: 50px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .google-map .embed:before {
   padding-top: 40%;
-} */
-
+}
+*/
+/*
 /* NOTE Footer */
 
-/* .footer {
+ .footer {
   padding: 12px 0px;
   font-family: "Poppins", sans-serif;
-  margin-left: 7.7%;
-  margin-right: 3%;
 }
 
 .footer .nav a {
@@ -921,5 +927,5 @@ button.toggler-menu {
 .footer p {
   color: #8a817c;
   font-stretch: 14px;
-  margin: 0;
-} */
+  margin: 1;
+}
