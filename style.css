@@ -139,6 +139,9 @@ button.toggler-menu {
 }
 
 @media (max-width: 767px) {
+  html {
+    scroll-behavior: smooth;
+  }
   .wrap {
     margin-left: 1%;
     margin-right: 1%;
