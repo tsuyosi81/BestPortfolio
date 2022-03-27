@@ -121,11 +121,11 @@
     <!-- NOTE About Me -->
     <br><br><br><br>
     <div class="wrap">
-        <section id="about">
+        <section class="content" id="about">
             <div class="container fade-in">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="about-me">
+                        <div class="about-me hidden">
                             <div class="img" data-wow-duration="0.5s">
                                 <img src="./images/profile-pic.HEIC" alt="">
                             </div>
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 ml-auto">
-                        <div class="about-info">
+                        <div class="about-info hidden">
                             <div class="title">
                                 <h3>About Me</h3>
                             </div>
@@ -220,7 +220,7 @@
         </section>
         <br><br>
         <div class="separated"></div>
-        <div class="container" id="work">
+        <div class="container hidden content" id="work">
             <!-- NOTE Works -->
             <div class="title">
                 <h3>What I do ?</h3>
@@ -230,7 +230,7 @@
                 <div class="col-lg-4 wow bounceInLeft">
                     <div class="box1">
                         <i class="icon icon-mobile"></i>
-                        <div class="content">
+                        <div class="content hidden">
                             <br>
                             <h5>UI/UX Design</h5>
                             <p>
@@ -246,7 +246,7 @@
                 <div class="col-lg-4 wow bounceInUp">
                     <div class="box1 box2">
                         <i class="icon icon-desktop"></i>
-                        <div class="content">
+                        <div class="content hidden">
                             <br>
                             <h5>Web Development</h5>
                             <p>
@@ -258,11 +258,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- NOTE Skills -->
                 <div class="col-lg-4 wow bounceInRight">
                     <div class="box1 box2">
                         <i class="icon icon-target"></i>
-                        <div class="content">
+                        <div class="content hidden">
                             <br>
                             <h5>Software Development</h5>
                             <p>
@@ -277,12 +276,11 @@
         </div>
         <br><br>
         <div class="separated"></div>
-        <section class="mh-skills wow zoomIn" id="skills">
+        <!-- NOTE Skills -->
+        <section class="mh-skills hidden content" id="skills">
             <div class="container">
                 <div class="row">
-
-
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden">
                         <div class="title">
                             <h3>Experience & Skills</h3>
                         </div>
@@ -309,7 +307,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden">
                         <!-- <div class="mh-professional-skills"> -->
                         <div class="title">
                             <h3>Technical Skills</h3>
@@ -356,8 +354,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -365,23 +361,23 @@
             <div class="separated"></div>
         </section>
         <!-- NOTE Projects -->
-        <section class="project" id="project">
+        <section class="project hidden content" id="project">
             <div class="title">
                 <h3>See My Projects</h3>
             </div>
 
             <!-- filter -->
-            <ul class="project-filter">
+            <ul class="project-filter hidden">
                 <li class="list project-filter-active" data-filter="all">All</li>
                 <li class="list" data-filter="web">Website</li>
                 <li class="list" data-filter="app">Application</li>
                 <li class="list" data-filter="design">Design</li>
             </ul>
             <!-- Container -->
-            <div class="project-container">
+            <div class="project-container hidden">
 
 
-                <a href="https://rococo-shortbread-e6146b.netlify.app/" target="blank" class="project-box web"
+                <a href="https://rococo-shortbread-e6146b.netlify.app/" target="blank" class="project-box web hidden"
                     data-lightbox="work">
                     <img src="./images/calculator-project.png" alt="work" class="image">
                     <div class="middle">
@@ -390,7 +386,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://stellar-phoenix-be2467.netlify.app/" target="blank" class="project-box web"
+                <a href="https://stellar-phoenix-be2467.netlify.app/" target="blank" class="project-box web hidden"
                     data-lightbox="work">
                     <img src="./images/piggame-project.png" alt="work" class="image">
                     <div class="middle">
@@ -399,7 +395,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://boring-thompson-fde54b.netlify.app/" target="blank" class="project-box web"
+                <a href="https://boring-thompson-fde54b.netlify.app/" target="blank" class="project-box web hidden"
                     data-lightbox="work">
                     <img src="./images/portfolio-project.png" alt="work" class="image">
                     <div class="middle">
@@ -421,7 +417,7 @@
         </section>
         <div class="separated"></div>
         <!-- NOTE Contact -->
-        <section id="contact">
+        <section class="hidden content" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
