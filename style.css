@@ -362,7 +362,6 @@ button.toggler-menu {
 }
 
 .info {
-  text-align: center;
   margin-top: 25px;
   color: #404040;
 }
@@ -427,12 +426,6 @@ button.toggler-menu {
 }
 
 /* NOTE Works */
-
-/* #work {
-  margin-left: 9%;
-  margin-right: 3%;
-  align-items: center;
-} */
 
 .box1 {
   background: #b7b7a4;
@@ -515,7 +508,7 @@ button.toggler-menu {
 
 /* NOTE Experience */
 
-/* .resume-box {
+.resume-box {
   font-family: "Poppins", sans-serif;
 }
 
@@ -532,22 +525,12 @@ button.toggler-menu {
   margin-bottom: 50px;
 }
 
-.education-box h6 {
-  color: #404040;
-  margin: 5px 0;
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-}
-
-.education-box li + li {
-  margin-top: 25px;
-} */
-
 /* NOTE Skills */
+
 /* #skills {
   margin-left: 7%;
   margin-right: 3%;
-}
+} */
 
 .mh-professional-skills h3 {
   font-size: 30px;
@@ -566,21 +549,25 @@ button.toggler-menu {
 .skill-bars {
   margin-top: 50px;
   padding: 25px 30px;
-  width: 450px;
-  height: 550px;
+  /* width: 100%; */
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  height: 550px;
 }
+
 .skill-bars .bar {
   margin: 20px 0;
 }
+
 .skill-bars .bar:first-child {
   margin-top: 0px;
 }
+
 .skill-bars .bar .info {
-  margin-left: -20%;
-  margin-bottom: 5px;
+  /* margin-left: -20%;
+  margin-bottom: 5px; */
 }
+
 .skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
@@ -593,6 +580,7 @@ button.toggler-menu {
     opacity: 1;
   }
 }
+
 .skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
@@ -681,19 +669,27 @@ button.toggler-menu {
   content: "65%";
 }
 
-@media (max-width: 767px) {
+@media (max-width: 764px) {
   .education-box {
     width: 100%;
+    margin-left: 0;
   }
 
   .skill-bars {
     width: 100%;
   }
+}
 
-  .mh-professional-skills h3 {
-    margin-top: 65px;
-  }
-} */
+.education-box h6 {
+  color: #404040;
+  margin: 5px 0;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.education-box li + li {
+  margin-top: 25px;
+}
 
 /* NOTE Projects */
 
