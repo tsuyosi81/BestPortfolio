@@ -34,9 +34,17 @@ body {
   outline: none !important;
 }
 
-/* .hidden {
-  display: none;
-} */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 /* NOTE Navbar */
 
@@ -923,11 +931,10 @@ button.toggler-menu {
 .google-map .embed:before {
   padding-top: 40%;
 }
-*/
-/*
+
 /* NOTE Footer */
 
- .footer {
+.footer {
   padding: 12px 0px;
   font-family: "Poppins", sans-serif;
 }

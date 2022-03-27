@@ -41,21 +41,22 @@
 
 // NOTE Scroll Fade in
 
-window.onload = function () {
-    const effect = document.querySelector('.content');
-    window.addEventListener('scroll', scrollEffect);
+window.addEventListener('scroll', reveal);
 
-    function scrollEffect() {
-        if (window.scrollY >= 500) {
-            effect.style.opacity = '1';
-            effect.style.transform = 'translateX(0px)';
-            effect.style.transition = '1.3s ease-in-out';
-        } else {
-            effect.style.opacity = '0';
-            effect.style.transform = 'translateX(-50px)';
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
         }
-    }
-    scrollEffect();
+        else {
+            reveals[i].classList.remove('active');
+        };
+    };
 };
-
-
