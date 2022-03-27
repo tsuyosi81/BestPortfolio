@@ -18,64 +18,23 @@
 })(jQuery);
 
 // NOTE Project Filter
-// $(function () {
-//     var $grid = $('#tp-grid'),
-//         $name = $('#name'),
-//         $close = $('#close'),
-//         $loader = $('').insertBefore($grid),
-//         stapel = $grid.stapel({
-//             randomAngle: true,
-//             delay: 50,
-//             gutter: 70,
-//             pileAngles: 5,
-//             onLoad: function () {
-//                 $loader.remove();
-//             },
-//             onBeforeOpen: function (pileName) {
-//                 $name.html(pileName);
-//             },
-//             onAfterOpen: function (pileName) {
-//                 $close.show();
-//             }
-//         });
-//     $close.on('click', function () {
-//         $close.hide();
-//         $name.empty();
-//         stapel.closePile();
-//     });
 
+// For-filter-menu
 
-//     jQuery(function ($) {
-//         "use strict";
-//         $('#flat').cubeportfolio({
-//             filters: '#flat',
-//             layoutMode: 'mosaic',
-//             sortByDimension: true,
-//             mediaQueries: [{
-//                 width: 1300,
-//                 cols: 6,
-//             }, {
-//                 width: 1100,
-//                 cols: 6,
-//             }, {
-//                 width: 920,
-//                 cols: 6,
-//             }, {
-//                 width: 400,
-//                 cols: 1,
-//                 options: {
-//                     gapHorizontal: 15,
-//                     gapVertical: 15,
-//                 }
-//             }],
-//             defaultFilter: '*',
-//             animationType: 'fadeOutTop',
-//             gapHorizontal: 0,
-//             gapVertical: 0,
-//             gridAdjustment: 'responsive',
-//             caption: 'zoom',
-//             lightboxDelegate: '.cbp-lightbox',
-//             lightboxGallery: true,
-//             lightboxTitleSrc: 'data-title',
-//         });
-//     });
+$(document).on('click', '.project-filter li', function () {
+    $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+});
+
+// For-Project/work-filter
+
+$(document).ready(function () {
+    $('.list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('project-box').show('1000');
+        } else {
+            $('.project-box').not('.' + value).hide('1000');
+            $('.project-box').filter('.' + value).show('1000');
+        }
+    })
+})
