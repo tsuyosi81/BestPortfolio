@@ -7,7 +7,7 @@ html {
 ul {
   list-style: none;
 }
-/*
+
 .title h3 {
   margin: 0;
   color: #404040;
@@ -24,7 +24,12 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
-*/
+
+.wrap {
+  margin-left: 2%;
+  margin-right: -3.5%;
+}
+
 * {
   outline: none !important;
 }
@@ -89,8 +94,7 @@ button.toggler-menu {
 
 .d-flex {
   padding: 15px;
-  display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 11;
@@ -123,6 +127,10 @@ button.toggler-menu {
 }
 
 @media (max-width: 767px) {
+  .wrap {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
   .me {
     padding-left: 840px;
   }
@@ -183,6 +191,12 @@ button.toggler-menu {
   padding: 10px;
   line-height: 20px;
   text-align: center;
+}
+
+@media (min-width: 740px) {
+  button.toggler-menu {
+    display: none;
+  }
 }
 
 /* NOTE Home */
