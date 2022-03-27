@@ -34,7 +34,7 @@ body {
   outline: none !important;
 }
 
-.reveal {
+/* .reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
@@ -44,7 +44,7 @@ body {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
-}
+} */
 
 /* NOTE Navbar */
 
@@ -139,9 +139,6 @@ button.toggler-menu {
 }
 
 @media (max-width: 767px) {
-  html {
-    scroll-behavior: smooth;
-  }
   .wrap {
     margin-left: 1%;
     margin-right: 1%;
