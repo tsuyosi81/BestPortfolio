@@ -38,7 +38,7 @@ body {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 .reveal.active {
@@ -62,8 +62,7 @@ a:hover {
   border-right: 1px solid rgba(11, 11, 19, 0.1);
   z-index: 99999;
 }
-34
-.header-left .top a {
+34 .header-left .top a {
   color: white;
   font-weight: 600;
   font-size: 40px;
