@@ -83,7 +83,7 @@ a:hover {
   width: 100%;
 }
 
-.nav-menu li + li {
+.nav-menu li+li {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -143,6 +143,7 @@ button.toggler-menu {
     margin-left: 1%;
     margin-right: 1%;
   }
+
   .me {
     padding-left: 840px;
   }
@@ -340,6 +341,7 @@ button.toggler-menu {
     opacity: 0.5;
     width: 100%;
   }
+
   /* NOTE About Me */
 
   /* 
@@ -614,6 +616,7 @@ button.toggler-menu {
     0 1px rgba(255, 255, 255, 0.8);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 @keyframes animate {
   100% {
     transform: scaleX(1);
@@ -628,21 +631,27 @@ button.toggler-menu {
   background: #b7b7a4;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+
 .bar .progress-line.html span {
   width: 90%;
 }
+
 .bar .progress-line.css span {
   width: 80%;
 }
+
 .bar .progress-line.javascript span {
   width: 70%;
 }
+
 .bar .progress-line.react span {
   width: 50%;
 }
+
 .bar .progress-line.sql span {
   width: 65%;
 }
+
 .progress-line span::before {
   position: absolute;
   content: "";
@@ -657,6 +666,7 @@ button.toggler-menu {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 .progress-line span::after {
   position: absolute;
   top: -28px;
@@ -670,23 +680,29 @@ button.toggler-menu {
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
+
 @keyframes showText2 {
   100% {
     opacity: 1;
   }
 }
+
 .progress-line.html span::after {
   content: "90%";
 }
+
 .progress-line.css span::after {
   content: "80%";
 }
+
 .progress-line.javascript span::after {
   content: "70%";
 }
+
 .progress-line.react span::after {
   content: "50%";
 }
+
 .progress-line.sql span::after {
   content: "65%";
 }
@@ -709,7 +725,7 @@ button.toggler-menu {
   font-family: "Poppins", sans-serif;
 }
 
-.education-box li + li {
+.education-box li+li {
   margin-top: 25px;
 }
 
@@ -719,6 +735,7 @@ button.toggler-menu {
   justify-content: center;
   text-align: center;
 }
+
 #project {
   display: flex;
   justify-content: center;
@@ -810,10 +827,12 @@ button.toggler-menu {
     background-color: #f9f9f9;
     border: 1px solid #0f1025;
   }
+
   .project-filter-active {
     background-color: #ffffff;
     border: 1px solid #0f1025;
   }
+
   .project-box {
     width: 80%;
   }
@@ -824,7 +843,8 @@ button.toggler-menu {
     font-size: 1.8rem;
   }
 }
-*//* 
+
+* //* 
 
 /* NOTE Contact */
 
@@ -869,7 +889,7 @@ button.toggler-menu {
   padding-left: 10px;
 }
 
-.contact-info li + li {
+.contact-info li+li {
   padding-top: 20px;
 }
 
