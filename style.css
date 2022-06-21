@@ -546,11 +546,30 @@ button.toggler-menu {
   list-style: none;
   color: #404040;
   width: 450px;
-  height: 550px;
+  height: 620px;
   margin-left: -20px;
   overflow: scroll;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.work-title{
+  display: flex;
+  align-items: center;
+}
+
+.education-box img{
+  width: 10%;
+  height: 10%;
+  margin-right: 2%;
+}
+
+@media (max-width: 740px) {
+  .education-box img {
+      width: 22%;
+      height: 22%;
+      margin-right: 2%;
+    }
 }
 
 /* NOTE Skills */
@@ -580,7 +599,7 @@ button.toggler-menu {
   /* width: 100%; */
   background: #fff;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  height: 550px;
+  height: 620px;
 }
 
 .skill-bars .bar {
@@ -645,7 +664,11 @@ button.toggler-menu {
 }
 
 .bar .progress-line.react span {
-  width: 50%;
+  width: 65%;
+}
+
+.bar .progress-line.python span {
+  width: 60%;
 }
 
 .bar .progress-line.sql span {
@@ -700,7 +723,11 @@ button.toggler-menu {
 }
 
 .progress-line.react span::after {
-  content: "50%";
+  content: "65%";
+}
+
+.progress-line.python span::after {
+  content: "60%";
 }
 
 .progress-line.sql span::after {
